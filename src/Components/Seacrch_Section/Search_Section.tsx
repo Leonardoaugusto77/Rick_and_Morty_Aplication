@@ -27,7 +27,13 @@ export default function Search_Section({
             <Search_icon />
           </InputAndIconContainer>
         </Search_Section_Container>
-        <img src={Section_Img} alt="Rick and Morty" width="430px" />
+        <div
+          style={{
+            width: "50vh",
+          }}
+        >
+          <img src={Section_Img} alt="Rick and Morty" width="430px" />
+        </div>
       </Wrapper>
     </>
   );

@@ -1,39 +1,45 @@
-export default function Characters_Section(): JSX.Element {
-  const squareStyle = {
-    width: "100px",
-    height: "100px",
-    backgroundColor: "blue",
-    margin: "0 auto", // Centraliza horizontalmente
-    display: "flex",
-    alignItems: "center", // Centraliza verticalmente
-    justifyContent: "center", // Centraliza horizontalmente
+import {
+  Character_Card,
+  Title_Section_Card,
+  Wrapper_Charactres,
+  Character_CardsContainer,
+} from "../../assets/Styles/Charactres_Styles/Charactres.styles";
 
-    marginRight: "15px",
-  };
+interface CharactersSectionProps {
+  characters: any[];
+}
 
-  const display = {
-    display: "flex",
-    justifyContent: "center", // Note a correção no nome da propriedade
-    alignItems: "center", // Note a correção no nome da propriedade
-  };
+export default function Characters_Section({
+  characters,
+}: CharactersSectionProps): JSX.Element {
+  const firstSixCharacters = characters.slice(0, 6);
 
   return (
-    <>
-      <h2 style={{ textAlign: "center" }}>The most charismatic</h2>
-      <div style={display}>
-        <div className="card_section">
-          <div style={squareStyle}></div>
-        </div>
-        <div className="card_section">
-          <div style={squareStyle}></div>
-        </div>
-        <div className="card_section">
-          <div style={squareStyle}></div>
-        </div>
-        <div className="card_section">
-          <div style={squareStyle}></div>
-        </div>
-      </div>
-    </>
+    <Wrapper_Charactres>
+      <Title_Section_Card>The most charismatic</Title_Section_Card>
+
+      <Character_CardsContainer>
+        {firstSixCharacters.map((character) => (
+          <CharacterCard
+            key={character.id}
+            id={character.id}
+            image={character.image}
+          />
+        ))}
+      </Character_CardsContainer>
+    </Wrapper_Charactres>
+  );
+}
+
+interface CharacterCardProps {
+  id: number;
+  image: string;
+}
+
+function CharacterCard({ id, image }: CharacterCardProps): JSX.Element {
+  return (
+    <Character_Card>
+      <img src={image} alt={`Character ${id}`} width="200px" />
+    </Character_Card>
   );
 }

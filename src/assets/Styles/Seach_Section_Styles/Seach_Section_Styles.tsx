@@ -11,47 +11,43 @@ export const Wrapper = styled.div`
   background: #fff;
 `;
 
-export const Search_Section_Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-`;
+export const Search_Section_Container = styled.div``;
 
 export const InputAndIconContainer = styled.div`
   display: flex;
   align-items: center;
   width: 80%;
+  position: relative; /* Torna a posição relativa para que possamos posicionar o ícone de forma absoluta dentro dele */
 `;
 
 export const Text_Section = styled.h1`
   text-align: left;
-  width: 80%;
+  width: 70vh;
   margin-bottom: 20px;
 `;
 
 export const Search_Input = styled.input`
-  width: 300px;
-  height: 10px;
+  width: 100%; /* Preencha todo o espaço disponível */
   padding: 10px;
   border: 1px solid #000;
   border-radius: 5px;
 `;
 
 export const Search_icon = styled(FaSearch)`
-  width: 70px;
-  position: fixed;
-  left: 370px;
-  height: 33px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 36px;
   border-radius: 5px;
   background: #000;
   color: #fff;
   font-size: 10px;
+  cursor: pointer;
+  width: 20%;
 
   &:hover {
-    cursor: pointer;
     background-color: purple;
-    transition: 2s;
+    transition: background-color 0.5s;
   }
 `;
