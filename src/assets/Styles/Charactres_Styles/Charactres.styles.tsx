@@ -16,6 +16,10 @@ export const Title_Section_Card = styled.h2`
 export const Character_Card = styled.div`
   width: 200px;
   height: 200px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 export const Character_CardsContainer = styled.div`
   display: grid;

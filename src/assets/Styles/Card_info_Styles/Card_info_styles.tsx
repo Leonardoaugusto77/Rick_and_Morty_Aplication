@@ -25,20 +25,13 @@ export const Card_Container = styled.div`
 `;
 
 export const Card_CharacterImage = styled.img`
-  width: 200px; // Defina a largura desejada para a imagem
-  height: auto; // A altura será ajustada automaticamente para manter a proporção
-  cursor: pointer; // Adicione um cursor de ponteiro para indicar que é clicável
-
-  // Adicione estilos adicionais conforme necessário
+  width: 200px;
+  height: auto;
+  cursor: pointer;
 `;
 
 export const Card_Title = styled.h1`
   font-size: 24px;
-  margin-bottom: 10px;
-`;
-
-export const Card_Episode = styled.p`
-  font-size: 16px;
   margin-bottom: 10px;
 `;
 

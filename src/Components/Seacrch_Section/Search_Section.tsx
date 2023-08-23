@@ -20,6 +20,11 @@ export default function Search_Section({
   const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   const handleSearch = async () => {
+    if (searchTerm.trim() === "") {
+      window.alert("Digite um personagem válido");
+      return;
+    }
+
     try {
       const response = await fetch(
         `https://rickandmortyapi.com/api/character/?name=${searchTerm}`
@@ -34,6 +39,17 @@ export default function Search_Section({
     } catch (error) {
       console.error("Erro ao buscar personagem:", error);
       setSelectedCharacter(null);
+    } finally {
+      // Limpar o campo de pesquisa após a pesquisa ser feita
+      setSearchTerm("");
+    }
+  };
+
+  const handleEnterKeyPress = (
+    event: React.KeyboardEvent<HTMLInputElement>
+  ) => {
+    if (event.key === "Enter") {
+      handleSearch();
     }
   };
 
@@ -55,6 +71,7 @@ export default function Search_Section({
               placeholder="Search character by name"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyPress={handleEnterKeyPress} // Adicionado para lidar com a tecla Enter
             />
             <Search_icon onClick={handleSearch} />
           </InputAndIconContainer>
