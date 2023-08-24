@@ -40,3 +40,20 @@ Para começar a trabalhar neste projeto, siga os passos abaixo:
    ```shell
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
    ```
+
+2. Instale as dependências:
+
+```
+npm install
+
+```
+
+3. Inicie o Projeto:
+
+```
+npm run dev
+```
+
+O aplicativo será executado localmente e estará disponível em http://localhost:3000. Certifique-se de que a porta 3000 não esteja ocupada por outro processo.
+
+Aproveite o projeto e sinta-se à vontade para explorar e contribuir!
