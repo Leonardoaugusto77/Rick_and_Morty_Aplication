@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+const mobileMedia =
+  "@media (max-na uma regra de mídia personalizadawidth: 390px), (max-width: 414px)";
+
 export const Card_Backdrop = styled.div`
   position: fixed;
   top: 0;
@@ -22,6 +25,11 @@ export const Card_Container = styled.div`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
   position: relative;
   text-align: center;
+
+  ${mobileMedia} {
+    width: 295px;
+    height: 420px;
+  }
 `;
 
 export const Card_CharacterImage = styled.img`

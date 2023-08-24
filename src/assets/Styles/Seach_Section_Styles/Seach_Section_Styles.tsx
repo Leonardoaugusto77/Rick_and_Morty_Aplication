@@ -1,8 +1,8 @@
 import { FaSearch } from "react-icons/fa";
 import { styled } from "styled-components";
 
-// Defina uma regra de mídia personalizada
 const mobileMedia = "@media (max-width: 390px), (max-width: 414px)";
+const largeMedia = "@media (min-width: 768px) and (max-width: 1025px)";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -14,14 +14,31 @@ export const Wrapper = styled.div`
   background: #fff;
 
   ${mobileMedia} {
-    /* Estilos para telas de 390px a 414px */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 436px;
+    height: 429px;
 
     img {
-      width: 400px;
+      width: 380px;
+    }
+
+    @media (max-width: 320px) {
+      height: 418px;
+
+      img {
+        width: 325px;
+      }
+    }
+
+    ${largeMedia} {
+      width: 100vh;
+    }
+  }
+
+  ${largeMedia} {
+    img {
+      max-width: 100%; /* Evita que a imagem ultrapasse a largura da tela */
     }
   }
 `;
@@ -51,6 +68,11 @@ export const Text_Section = styled.h1`
     text-align: center;
     font-size: 25px;
     width: 100%;
+  }
+
+  ${largeMedia} {
+    font-size: 25px;
+    width: 33vh;
   }
 `;
 
