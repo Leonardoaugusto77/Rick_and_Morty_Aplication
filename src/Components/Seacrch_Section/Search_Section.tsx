@@ -76,11 +76,7 @@ export default function Search_Section({
             <Search_icon onClick={handleSearch} />
           </InputAndIconContainer>
         </Search_Section_Container>
-        <div
-          style={{
-            width: "50vh",
-          }}
-        >
+        <div>
           <img src={Section_Img} alt="Rick and Morty" width="435px" />
         </div>
       </Wrapper>

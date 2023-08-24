@@ -18,7 +18,11 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 436px;
+
+    img {
+      width: 400px;
+    }
   }
 `;
 
@@ -31,8 +35,7 @@ export const InputAndIconContainer = styled.div`
   position: relative;
 
   ${mobileMedia} {
-    /* Estilos para telas de 390px a 414px */
-    width: 100%;
+    margin: auto;
   }
 `;
 
