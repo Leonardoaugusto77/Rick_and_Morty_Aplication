@@ -1,6 +1,9 @@
 import { FaSearch } from "react-icons/fa";
 import { styled } from "styled-components";
 
+// Defina uma regra de mídia personalizada
+const mobileMedia = "@media (max-width: 390px), (max-width: 414px)";
+
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -10,13 +13,12 @@ export const Wrapper = styled.div`
   border: 3px solid #000;
   background: #fff;
 
-  @media (max-width: 390px) {
+  ${mobileMedia} {
+    /* Estilos para telas de 390px a 414px */
     flex-direction: column;
-    align-items: center; /* Centralize verticalmente em dispositivos móveis */
-    justify-content: center; /* Centralize horizontalmente em dispositivos móveis */
-    height: auto; /* Redefina a altura automática para se ajustar ao conteúdo */
-
-    height: 467px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
   }
 `;
 
@@ -28,8 +30,9 @@ export const InputAndIconContainer = styled.div`
   width: 80%;
   position: relative;
 
-  @media (max-width: 390px) {
-    margin: auto;
+  ${mobileMedia} {
+    /* Estilos para telas de 390px a 414px */
+    width: 100%;
   }
 `;
 
@@ -38,7 +41,8 @@ export const Text_Section = styled.h1`
   width: 70vh;
   margin-bottom: 20px;
 
-  @media (max-width: 390px) {
+  ${mobileMedia} {
+    /* Estilos para telas de 390px a 414px */
     margin-bottom: 20px;
     margin-top: 50px;
     text-align: center;

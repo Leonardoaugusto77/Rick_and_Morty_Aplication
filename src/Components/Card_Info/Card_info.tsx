@@ -25,8 +25,6 @@ export default function Card_Info({
     onClose();
   };
 
-  console.log(character.image);
-
   return (
     <Card_Backdrop>
       <Card_Container>
