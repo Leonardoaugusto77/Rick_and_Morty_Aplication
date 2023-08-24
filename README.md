@@ -4,9 +4,12 @@
 
 Olá, seja bem-vindo ao projeto React com TypeScript! Este repositório contém um aplicativo web construído com React e TypeScript, e aqui estão algumas informações importantes sobre o projeto.
 
+![Imagem 1](public/Screenshot_34.png)
+![Imagem 2](public/Screenshot_35.png)
+
 ## Sobre o Projeto
 
-Antes de começar a escrever código, criei um protótipo navegável para ter uma noção de como o produto final seria. Tenho experiência em UI Design há 2 anos e já trabalhei em diversos projetos relacionados a essa área. Para estilização, utilizei a biblioteca "Styled Components" e, se tivesse mais tempo, poderia aprender a utilizar o "Chakra UI" para aplicá-lo ao projeto.
+Antes de começar a escrever código, criei um [protótipo](https://www.figma.com/file/Huro9TiYYw70Ksc3NZv29y/Adam-Robo?type=design&node-id=42%3A18&mode=design&t=mumX4L5YlNKlweM5-1) navegável para ter uma noção de como o produto final seria. Tenho experiência em UI Design há 2 anos e já trabalhei em diversos projetos relacionados a essa área. Para estilização, utilizei a biblioteca "Styled Components" e, se tivesse mais tempo, poderia aprender a utilizar o "Chakra UI" para aplicá-lo ao projeto.
 
 Além disso, criei um arquivo "Theme.tsx" e "GlobalStyles.tsx" para manter uma padronização no projeto. Utilizei meus conhecimentos prévios em organização de pastas para tornar o código mais fácil de refatorar e dar manutenção.
 
