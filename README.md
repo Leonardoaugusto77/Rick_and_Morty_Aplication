@@ -4,8 +4,8 @@
 
 Olá, seja bem-vindo ao projeto React com TypeScript! Este repositório contém um aplicativo web construído com React e TypeScript, e aqui estão algumas informações importantes sobre o projeto.
 
-![Imagem 1](public/Screenshot_34.png)
-![Imagem 2](public/Screenshot_35.png)
+![Imagem 1](./public/Imgs/Screenshot_34.png)
+![Imagem 2](public/Imgs/Screenshot_35.png)
 
 ## Sobre o Projeto
 
