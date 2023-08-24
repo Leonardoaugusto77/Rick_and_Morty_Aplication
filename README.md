@@ -2,7 +2,7 @@
 
 ## Bem-vindo!
 
-Olá, seja bem-vindo ao projeto React com TypeScript! Este repositório contém um aplicativo web construído com React e TypeScript, e aqui estão algumas informações importantes sobre o projeto.
+Olá, seja bem-vindo projeto! Este repositório contém um aplicativo web construído com React e TypeScript, e aqui estão algumas informações importantes sobre o projeto.
 
 Acesse Projeto em seu celular ou computador atráves do [Aqui](https://teste-tecnico-adam-robo.vercel.app/)
 
