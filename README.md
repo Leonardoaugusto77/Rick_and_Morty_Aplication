@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# Projeto React com TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Bem-vindo!
 
-Currently, two official plugins are available:
+Olá, seja bem-vindo ao projeto React com TypeScript! Este repositório contém um aplicativo web construído com React e TypeScript, e aqui estão algumas informações importantes sobre o projeto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre o Projeto
 
-## Expanding the ESLint configuration
+Antes de começar a escrever código, criei um protótipo navegável para ter uma noção de como o produto final seria. Tenho experiência em UI Design há 2 anos e já trabalhei em diversos projetos relacionados a essa área. Para estilização, utilizei a biblioteca "Styled Components" e, se tivesse mais tempo, poderia aprender a utilizar o "Chakra UI" para aplicá-lo ao projeto.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Além disso, criei um arquivo "Theme.tsx" e "GlobalStyles.tsx" para manter uma padronização no projeto. Utilizei meus conhecimentos prévios em organização de pastas para tornar o código mais fácil de refatorar e dar manutenção.
 
-- Configure the top-level `parserOptions` property like this:
+## Melhorias com Mais Tempo
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- **Skeleton Loading**: Implementaria uma animação de carregamento (Skeleton Loading) para proporcionar uma experiência mais agradável aos usuários e melhorar a psicologia da espera.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Gerenciamento de Estado**: Consideraria a utilização de uma biblioteca de gerenciamento de estado como Redux para melhorar o controle de estado da aplicação.
+
+- **Padrões de Responsividade**: Aperfeiçoaria a responsividade da aplicação, garantindo que funcione perfeitamente em diversos dispositivos e tamanhos de tela.
+
+## Recursos Utilizados
+
+- **API Rick and Morty**: [Link da API](https://rickandmortyapi.com/)
+
+- **Styled Components**: Biblioteca para estilização de componentes React.
+
+- **Documentação do TypeScript**: Consultei a documentação oficial do TypeScript para resolver dúvidas e aprender mais sobre a linguagem.
+
+- **ChatGPT**: Utilizei o ChatGPT para pesquisar e tirar dúvidas relacionadas ao TypeScript.
+
+## Iniciando o Projeto
+
+Para começar a trabalhar neste projeto, siga os passos abaixo:
+
+1. Clone o repositório:
+
+   ```shell
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
