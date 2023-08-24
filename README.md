@@ -1,5 +1,3 @@
-# Projeto React com TypeScript
-
 ## Bem-vindo!
 
 Olá, seja bem-vindo projeto! Este repositório contém um aplicativo web construído com React e TypeScript, e aqui estão algumas informações importantes sobre o projeto.
