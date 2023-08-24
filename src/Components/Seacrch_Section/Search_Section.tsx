@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Search_icon,
   Search_Section_Container,
@@ -32,17 +32,20 @@ export default function Search_Section({
       const data = await response.json();
 
       if (data.results && data.results.length > 0) {
-        setSelectedCharacter(data.results[0]); // Define o personagem selecionado aqui
+        setSelectedCharacter(data.results[0]);
       } else {
-        setSelectedCharacter(null); // Define como null se nenhum personagem for encontrado
+        setSelectedCharacter(null);
       }
     } catch (error) {
       console.error("Erro ao buscar personagem:", error);
       setSelectedCharacter(null);
     } finally {
-      // Limpar o campo de pesquisa após a pesquisa ser feita
       setSearchTerm("");
     }
+  };
+
+  const handleCloseCard = () => {
+    setSelectedCharacter(null);
   };
 
   const handleEnterKeyPress = (
@@ -53,9 +56,20 @@ export default function Search_Section({
     }
   };
 
-  const handleCloseCard = () => {
-    setSelectedCharacter(null);
-  };
+  // Adicione um efeito para fechar o card quando a tecla "Esc" for pressionada
+  useEffect(() => {
+    const handleEscKeyPress = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        handleCloseCard();
+      }
+    };
+
+    window.addEventListener("keydown", handleEscKeyPress);
+
+    return () => {
+      window.removeEventListener("keydown", handleEscKeyPress);
+    };
+  }, []);
 
   return (
     <>
@@ -71,7 +85,7 @@ export default function Search_Section({
               placeholder="Search character by name"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              onKeyPress={handleEnterKeyPress} // Adicionado para lidar com a tecla Enter
+              onKeyPress={handleEnterKeyPress}
             />
             <Search_icon onClick={handleSearch} />
           </InputAndIconContainer>

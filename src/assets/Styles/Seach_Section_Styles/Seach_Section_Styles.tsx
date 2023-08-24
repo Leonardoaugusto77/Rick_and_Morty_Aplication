@@ -38,7 +38,7 @@ export const Wrapper = styled.div`
 
   ${largeMedia} {
     img {
-      max-width: 100%; /* Evita que a imagem ultrapasse a largura da tela */
+      max-width: 100%;
     }
   }
 `;
@@ -62,7 +62,6 @@ export const Text_Section = styled.h1`
   margin-bottom: 20px;
 
   ${mobileMedia} {
-    /* Estilos para telas de 390px a 414px */
     margin-bottom: 20px;
     margin-top: 50px;
     text-align: center;

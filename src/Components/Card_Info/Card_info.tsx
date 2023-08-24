@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Card_Backdrop,
   Card_Container,
@@ -24,6 +25,20 @@ export default function Card_Info({
   const handleCardClose = () => {
     onClose();
   };
+
+  const handleEscKeyPress = (event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleEscKeyPress);
+
+    return () => {
+      window.removeEventListener("keydown", handleEscKeyPress);
+    };
+  }, []);
 
   return (
     <Card_Backdrop>

@@ -9,11 +9,11 @@ export const Card_Backdrop = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Garante que o card apareça acima de outros elementos */
+  z-index: 999;
 `;
 
 export const Card_Container = styled.div`
@@ -22,7 +22,7 @@ export const Card_Container = styled.div`
   height: auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   text-align: center;
 

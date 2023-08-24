@@ -3,11 +3,11 @@ import { styled } from "styled-components";
 export const Wrapper_Charactres = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column; /* Coloca os elementos em uma coluna */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  flex-direction: column;
+  align-items: center;
 
   @media (max-width: 768px) {
-    align-items: center; /* Centraliza o conteúdo horizontalmente em dispositivos móveis */
+    align-items: center;
   }
 `;
 
@@ -27,7 +27,7 @@ export const Character_Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-bottom: 20px; /* Adiciona espaço entre os cards em dispositivos móveis */
+    margin-bottom: 20px;
   }
 `;
 
@@ -37,9 +37,6 @@ export const Character_CardsContainer = styled.div`
   gap: 10px;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(
-      1,
-      1fr
-    ); /* Um card por linha em dispositivos móveis */
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
