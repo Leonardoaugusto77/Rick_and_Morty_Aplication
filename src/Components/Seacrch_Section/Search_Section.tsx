@@ -56,7 +56,6 @@ export default function Search_Section({
     }
   };
 
-  // Adicione um efeito para fechar o card quando a tecla "Esc" for pressionada
   useEffect(() => {
     const handleEscKeyPress = (event: KeyboardEvent) => {
       if (event.key === "Escape") {

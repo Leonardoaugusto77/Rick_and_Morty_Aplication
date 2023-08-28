@@ -8,7 +8,6 @@ export default function App(): JSX.Element {
   const [characters, setCharacters] = useState<any[]>([]);
 
   useEffect(() => {
-    // Busque os dados da API e atualize o estado "characters"
     RequestAPI()
       .then((data) => {
         setCharacters(data.results);
@@ -22,7 +21,6 @@ export default function App(): JSX.Element {
     <>
       <Search_Section Section_Img={Img} />
       <Characters_Section characters={characters} />{" "}
-      {/* Passe os personagens como props */}
     </>
   );
 }
